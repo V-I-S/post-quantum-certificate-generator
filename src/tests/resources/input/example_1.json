@@ -1,0 +1,23 @@
+{
+  "common_name": "post-quantum-demo.com",
+  "key_type": "DILITHIUM",
+  "key_size": "dilithium3",
+  "signature_algorithm": "Dilithium3",
+  "signature_oid": "1.3.6.1.4.1.2.267.7.6.4",
+  "subject": {
+    "organization": "Post-quantum Secure Corp",
+    "organizational_unit": "Q-IT Department",
+    "country": "PL",
+    "state": "Lower Silesia",
+    "locality": "Wroclaw",
+    "email": "patrykstopyra+pqc@gmail.com"
+  },
+  "subject_alternative_names": [
+    { "type": "DNS", "value": "api.post-quantum-demo.com" },
+    { "type": "DNS", "value": "www.post-quantum-demo.com" }
+  ],
+  "options": {
+    "output_format": "PEM",
+    "bare_content": false
+  }
+}

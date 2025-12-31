@@ -1,0 +1,28 @@
+Usage: java -jar MainPQC.jar <input_file_path.json> <output_directory_path>
+
+The format of input json file:
+{
+  "common_name": "...",
+  "key_type": "DILITHIUM",
+  "key_size": "dilithium3",
+  "signature_algorithm": "Dilithium3",
+  "signature_oid": "1.3.6.1.4.1.2.267.7.6.4",
+  "subject": {
+    "organization": "...",
+    "organizational_unit": "...",
+    "country": "...",
+    "state": "...",
+    "locality": "...",
+    "email": "..."
+  },
+  "subject_alternative_names": [
+    { "type": "DNS", "value": "..." },
+    { "type": "DNS", "value": "..." }
+  ]
+}
+
+The output directory after successful execution contains 4 files:
+ - input_filename.pub   // generated public key
+ - input_filename.key   // generated private key
+ - input_filename.csr   // generated certificate signing request
+ - input_filename.crt   // issued certificate

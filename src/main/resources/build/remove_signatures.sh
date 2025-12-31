@@ -1,0 +1,1 @@
+zip -d ./out/artifacts/pqc_jar/pqc.jar 'META-INF/*.SF' 'META-INF/*.RSA' 'META-INF/*.DSA'
